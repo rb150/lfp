@@ -1,0 +1,33 @@
+{{#each team}}
+<div class="main">
+
+    <div class="left">
+
+        <img src={{this.imagePath}} width='300' height='300'>
+
+    </div>
+    <div class="right">
+        <div class="name">
+            <h3>{{this.name}}</h3>
+        </div>
+        <div class="title">
+            <h5>{{this.jobTitle}}</h5>
+        </div>
+        <div class="description">
+            <p>{{this.description}}</p>
+        </div>
+        <div class="icons">
+            <a href={{this.twitter}}>
+                <i class="fa fa-twitter fa-lg"></i>
+            </a>
+            <a href={{this.facebook}}>
+                <i class="fa fa-facebook fa-lg"></i>
+            </a>
+            <a href={{this.linkedin}}>
+                <i class="fa fa-linkedin fa-lg"></i>
+            </a>
+        </div>
+    </div>
+
+</div>
+{{/each}}
